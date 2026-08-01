@@ -1,0 +1,130 @@
+{
+  "fullStackProjects": [
+    {
+      "id": "attendx-nova",
+      "title": "AttendX Nova",
+      "tagline": "A smart attendance platform, reimagined.",
+      "category": "Dashboards & Web Apps",
+      "description": "A full-featured attendance management platform (branded ClassRep Attendance Manager) built with React, TypeScript, and TanStack Start. Features biometric/WebAuthn fingerprint login, a guided multi-step onboarding flow, and a real-time analytics dashboard with animated count-up metrics, custom SVG gauges, and Recharts visualizations. Dark glassmorphism aesthetic with an indigo-to-violet design system and a responsive nav that adapts between mobile bottom-bar and desktop collapsible sidebar.",
+      "techStack": ["React", "TypeScript", "TanStack Start", "WebAuthn", "Recharts", "Framer Motion"],
+      "link": "https://attendx-nova.vercel.app/"
+    },
+    {
+      "id": "live2d-playground",
+      "title": "Live2D Playground",
+      "tagline": "A professional workbench for Live2D models.",
+      "category": "Tooling & Canvas",
+      "description": "A tuning and debugging tool for Live2D Cubism 2/3/4 models — load any model, adjust scale and position, inspect motions, expressions and parameters, and export a ready-to-use JSON config. Built for animators and VTuber-style character workflows.",
+      "techStack": ["React", "TypeScript", "Canvas Rendering", "Live2D Cubism SDK"],
+      "link": "https://2dmodel-taupe.vercel.app/"
+    },
+    {
+      "id": "biocycle-live",
+      "title": "BioCycle Live (IoT)",
+      "tagline": "Turning waste into energy — and data into insight.",
+      "category": "AI & IoT",
+      "description": "An IoT monitoring dashboard for a solid waste processing system converting organic waste into fertilizer and biogas. Heavily animated live gauges and charts, macOS-style dock navigation, ambient WebAudio sound effects, and an editable, persisted profile page. Built with AI-assisted development (Lovable).",
+      "techStack": ["React", "Real-time Data Viz", "WebAudio API", "Lovable AI"],
+      "link": "https://iot-olive-sigma.vercel.app/"
+    },
+    {
+      "id": "aurora-motors",
+      "title": "Aurora Motors (Car Showroom)",
+      "tagline": "Bespoke performance vehicles, engineered for tomorrow.",
+      "category": "Showcase & Design",
+      "description": "A premium automotive showcase site for a fictional performance car brand, featuring cinematic hero visuals, smooth scroll-driven reveals, and a high-end dealership feel.",
+      "techStack": ["React", "Framer Motion", "UI/UX Design"],
+      "link": "https://carzz-flame.vercel.app/"
+    },
+    {
+      "id": "vendor-management",
+      "title": "Vendor Management System",
+      "tagline": "Streamlined vendor operations.",
+      "category": "Dashboards & Web Apps",
+      "description": "A frontend dashboard for managing vendor records, tracking relationships, and organizing procurement-style workflows with a clean, functional business-tool UI.",
+      "techStack": ["React", "Dashboard UI", "Data Tables"],
+      "link": "https://vendor-azure-eight.vercel.app/"
+    },
+    {
+      "id": "digital-tamil-library",
+      "title": "Digital Tamil Library",
+      "tagline": "Tamil literature, digitized and accessible.",
+      "category": "Showcase & Design",
+      "description": "A UI concept for a digital library platform focused on Tamil-language literature and resources, designed with a clean, readable, culturally-rooted interface.",
+      "techStack": ["React", "UI/UX Design", "Accessibility"],
+      "link": "https://digital-tamil.vercel.app/"
+    },
+    {
+      "id": "bend-subway",
+      "title": "Bend Subway Management System",
+      "tagline": "Managing transit, simplified.",
+      "category": "Dashboards & Web Apps",
+      "description": "A management system interface for subway/transit operations, covering task and workflow tracking with a structured, operations-dashboard layout.",
+      "techStack": ["React", "Workflow UI", "Dashboard Design"],
+      "link": "https://bsms-five.vercel.app/"
+    },
+    {
+      "id": "supermarket-pos",
+      "title": "Supermarket POS (Smart Billing System)",
+      "tagline": "Point-of-sale, made smart.",
+      "category": "Tooling & Canvas",
+      "description": "A point-of-sale and billing system UI for supermarkets — handling item entry, cart management, and checkout flows with a fast, retail-optimized interface.",
+      "techStack": ["React", "POS UI", "Billing Logic"],
+      "link": "https://pos-xi-eosin.vercel.app/"
+    },
+    {
+      "id": "vaultauth",
+      "title": "VaultAuth — Fingerprint WebAuthn Demo",
+      "tagline": "Biometric authentication, demystified.",
+      "category": "Security & Biometrics",
+      "description": "A standalone WebAuthn/FIDO2 demo: register a fingerprint credential once, then sign in instantly via platform biometrics — no passwords. Shows a live session log with credential/verification details, built natively on the browser's Credential Management API (no external library).",
+      "techStack": ["WebAuthn", "FIDO2", "Credential Management API", "React"],
+      "link": "https://fingerprint-beta.vercel.app/"
+    }
+  ],
+  "fandomProjects": [
+    { "id": "gojo", "title": "Gojo", "link": "https://gojo-vert-eight.vercel.app/", "accentColor": "#3b82f6", "subTag": "Infinity Realm", "category": "Anime" },
+    { "id": "one-piece", "title": "One Piece", "link": "https://one-piece-iota-nine.vercel.app/", "accentColor": "#f97316", "subTag": "Grand Line", "category": "Anime" },
+    { "id": "sukuna", "title": "Sukuna", "link": "https://sukuna-pearl.vercel.app/", "accentColor": "#a855f7", "subTag": "Cursed Shrine", "category": "Anime" },
+    { "id": "zoro", "title": "Zoro", "link": "https://zoro-sandy.vercel.app/", "accentColor": "#10b981", "subTag": "3-Sword Style", "category": "Anime" },
+    { "id": "got", "title": "Game of Thrones", "link": "https://got-lime.vercel.app/", "accentColor": "#38bdf8", "subTag": "Iron Throne", "category": "TV & Movies" },
+    { "id": "avengers", "title": "Avengers", "link": "https://avengers-nu-one.vercel.app/", "accentColor": "#ef4444", "subTag": "Earth's Mightiest", "category": "Pop Culture" },
+    { "id": "batman", "title": "Batman", "link": "https://batman-fawn-gamma.vercel.app/", "accentColor": "#eab308", "subTag": "Gotham Dark", "category": "Pop Culture" },
+    { "id": "attack-on-titan", "title": "Attack on Titan", "link": "https://attack-on-titan-sigma.vercel.app/", "accentColor": "#d97706", "subTag": "Scout Regiment", "category": "Anime" },
+    { "id": "ipl", "title": "IPL", "link": "https://ipl-woad.vercel.app/", "accentColor": "#2563eb", "subTag": "Cricket Arena", "category": "Pop Culture" },
+    { "id": "spiderman", "title": "Spiderman", "link": "https://spiderman-phi.vercel.app/", "accentColor": "#dc2626", "subTag": "Spider-Verse", "category": "Pop Culture" },
+    { "id": "ben-10", "title": "Ben 10", "link": "https://ben-10-liart.vercel.app/", "accentColor": "#22c55e", "subTag": "Omnitrix UI", "category": "Pop Culture" },
+    { "id": "stranger-things", "title": "Stranger Things", "link": "https://stranger-things-lyart-nu.vercel.app/", "accentColor": "#f43f5e", "subTag": "Hawkins Lab", "category": "TV & Movies" },
+    { "id": "death-note", "title": "Death Note", "link": "https://death-note-eta.vercel.app/", "accentColor": "#64748b", "subTag": "Shinigami Realm", "category": "Anime" },
+    { "id": "naruto", "title": "Naruto", "link": "https://naruto-henna.vercel.app/", "accentColor": "#f97316", "subTag": "Leaf Village", "category": "Anime" },
+    { "id": "harry-potter", "title": "Harry Potter", "link": "https://harry-potter-pi-ivory.vercel.app/", "accentColor": "#b91c1c", "subTag": "Hogwarts Express", "category": "TV & Movies" },
+    { "id": "zenitsu", "title": "Zenitsu", "link": "https://zenitsu-tau.vercel.app/", "accentColor": "#eab308", "subTag": "Thunder Flash", "category": "Anime" },
+    { "id": "itachi-uchiha", "title": "Itachi Uchiha", "link": "https://itachi-theta.vercel.app/", "accentColor": "#dc2626", "subTag": "Sharingan Realm", "category": "Anime" }
+  ],
+  "miniGameProjects": [
+    {
+      "id": "ludo",
+      "title": "Ludo",
+      "link": "https://ludo-jade-nine.vercel.app/",
+      "tagline": "Classic board game with interactive dice mechanics and pawn tracking.",
+      "techStack": ["React", "Game Logic", "Board State Machine"],
+      "gameType": "ludo"
+    },
+    {
+      "id": "tictactoe",
+      "title": "Tic Tac Toe",
+      "link": "https://tictactoe-pi-sandy.vercel.app/",
+      "tagline": "Strategic grid matrix game with responsive turn feedback & score logs.",
+      "techStack": ["React", "Matrix Logic", "Canvas FX"],
+      "gameType": "tictactoe"
+    },
+    {
+      "id": "candy-crush",
+      "title": "Candy Crush",
+      "link": "https://candy-crush-chi-eight.vercel.app/",
+      "tagline": "Match-3 browser puzzle with tile cascades, animation bursts, and score combos.",
+      "techStack": ["React", "Match-3 Engine", "Framer Motion"],
+      "gameType": "candycrush"
+    }
+  ]
+}
