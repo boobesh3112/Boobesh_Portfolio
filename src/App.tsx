@@ -9,6 +9,7 @@ import { Parallax3DCanvas } from './components/Parallax3DCanvas';
 import { ScrollProgress } from './components/ScrollProgress';
 import { SplashLoader } from './components/SplashLoader';
 import { CustomCursor } from './components/CustomCursor';
+import TargetCursor from './components/TargetCursor';
 import { ThemeTransitionBlob } from './components/ThemeTransitionBlob';
 import { SkeletonLoader } from './components/SkeletonLoader';
 import { startIdleAssetPreloading } from './utils/assetPreloader';
@@ -43,6 +44,7 @@ export default function App() {
             <ThemeTransitionBlob />
             <SplashLoader onComplete={() => setSplashFinished(true)} />
             <CustomCursor />
+            <TargetCursor targetSelector=".cursor-target, button, a, [role='button']" spinDuration={4} />
             <ScrollProgress />
             <Parallax3DToggle />
             <Navbar />
