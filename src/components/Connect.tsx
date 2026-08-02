@@ -35,7 +35,7 @@ const CONNECTIONS: SocialPlatform[] = [
   {
     name: 'Phone Direct',
     category: 'Mobile / Call',
-    handle: '+91 98765 43210',
+    handle: '+91 98423 62989',
     href: 'tel:+919842362989',
     brandColor: '#10b981',
     icon: Phone,
