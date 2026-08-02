@@ -170,7 +170,7 @@ export const Contact: React.FC = () => {
           className="flex justify-center items-center gap-4 mb-16"
         >
           <a
-            href="https://github.com/Boobesh-J"
+            href="https://github.com/boobesh3112"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => soundEffects.playClick()}
@@ -182,7 +182,7 @@ export const Contact: React.FC = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/boobesh-j"
+            href="https://www.linkedin.com/in/boobesh-j-a904b6380"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => soundEffects.playClick()}
