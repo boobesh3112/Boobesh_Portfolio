@@ -7,6 +7,7 @@ import { Parallax3DCard } from './Parallax3DCard';
 import { StaggerText } from './StaggerText';
 import { ParallaxLayer } from './ParallaxLayer';
 import { CircuitLineArt } from './CircuitLineArt';
+import ScrollReveal from './ScrollReveal';
 
 export const About: React.FC = () => {
   const { theme } = useTheme();
@@ -385,29 +386,16 @@ export const About: React.FC = () => {
                       <Sparkles className="w-3.5 h-3.5" />
                       THE VIBE CODER PHILOSOPHY
                     </div>
-                    <blockquote className="text-lg sm:text-xl font-bold tracking-tight leading-snug italic relative inline-block" style={{ color: theme.textPrimary }}>
-                      "I consider myself a <span className="relative inline-block text-transparent bg-clip-text" style={{ backgroundImage: `linear-gradient(135deg, ${theme.accentPrimary}, ${theme.accentSecondary})` }}>
-                        vibe coder
-                        {/* Animated SVG Stroke Underline */}
-                        <svg
-                          className="absolute -bottom-1 left-0 w-full h-2 overflow-visible"
-                          viewBox="0 0 120 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <motion.path
-                            d="M2 9C30 3 90 3 118 9"
-                            stroke={theme.accentPrimary}
-                            strokeWidth="3.5"
-                            strokeLinecap="round"
-                            initial={{ pathLength: 0, opacity: 0 }}
-                            whileInView={{ pathLength: 1, opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.4 }}
-                          />
-                        </svg>
-                      </span> — someone who enjoys rapidly transforming ideas into working products by combining creativity, modern AI tools, and solid engineering practices. I love experimenting, prototyping, and turning concepts into polished applications."
-                    </blockquote>
+                    <ScrollReveal
+                      baseOpacity={0.15}
+                      enableBlur={true}
+                      baseRotation={2}
+                      blurStrength={6}
+                      textClassName="text-lg sm:text-xl font-bold tracking-tight leading-snug italic"
+                      containerClassName="my-2"
+                    >
+                      I consider myself a vibe coder — someone who enjoys rapidly transforming ideas into working products by combining creativity, modern AI tools, and solid engineering practices. I love experimenting, prototyping, and turning concepts into polished applications.
+                    </ScrollReveal>
                   </div>
                 </div>
               </Parallax3DCard>
