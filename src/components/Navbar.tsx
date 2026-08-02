@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Menu, X, Code2, ArrowUpRight } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { soundEffects } from '../utils/soundEffects';
+import { LogoAvatar } from './LogoAvatar';
 
 const NAV_ITEMS = [
   { label: 'About', href: '#about' },
@@ -55,12 +56,12 @@ export const Navbar: React.FC = () => {
           className="group flex items-center gap-2.5 font-bold text-lg sm:text-xl tracking-tight transition-transform duration-200 active:scale-95"
         >
           <div
-            className="w-9 h-9 rounded-xl flex items-center justify-center font-extrabold text-white shadow-md transition-all duration-300 group-hover:rotate-6"
+            className="w-9 h-9 rounded-xl flex items-center justify-center font-extrabold text-white shadow-md transition-all duration-300 group-hover:rotate-6 overflow-hidden relative"
             style={{
               background: `linear-gradient(135deg, ${theme.accentPrimary}, ${theme.accentSecondary})`,
             }}
           >
-            BJ
+            <LogoAvatar fallbackText="BJ" />
           </div>
           <span className="flex items-center gap-1.5 font-black tracking-wide">
             Boobesh J
