@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import { LogoAvatar } from './LogoAvatar';
 
 export const SplashLoader: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   const { theme } = useTheme();
@@ -38,17 +39,17 @@ export const SplashLoader: React.FC<{ onComplete: () => void }> = ({ onComplete 
               initial={{ scale: 0.5, rotate: -15, opacity: 0 }}
               animate={{ scale: [0.5, 1.1, 1], rotate: [ -15, 5, 0 ], opacity: 1 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="w-20 h-20 rounded-2xl flex items-center justify-center font-black text-3xl text-white shadow-2xl relative"
+              className="w-20 h-20 rounded-2xl flex items-center justify-center font-black text-3xl text-white shadow-2xl relative overflow-hidden"
               style={{
                 background: `linear-gradient(135deg, ${theme.accentPrimary}, ${theme.accentSecondary})`,
                 boxShadow: `0 0 32px ${theme.glowColor}`,
               }}
             >
-              BJ
+              <LogoAvatar fallbackText="BJ" />
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
-                className="absolute -top-2 -right-2 p-1 rounded-full bg-black/40 text-amber-300"
+                className="absolute -top-2 -right-2 p-1 rounded-full bg-black/40 text-amber-300 z-10"
               >
                 <Sparkles className="w-4 h-4" />
               </motion.div>
