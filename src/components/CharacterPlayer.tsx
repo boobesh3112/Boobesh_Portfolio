@@ -7,6 +7,7 @@ interface CharacterPlayerProps {
   className?: string;
   totalFrames?: number;
   targetFps?: number;
+  durationSeconds?: number;
   maxWidth?: string;
 }
 
@@ -14,7 +15,8 @@ export const CharacterPlayer: React.FC<CharacterPlayerProps> = ({
   onLoaded,
   className = '',
   totalFrames = 150,
-  targetFps = 25,
+  targetFps,
+  durationSeconds = 7,
   maxWidth = '680px',
 }) => {
   const { theme } = useTheme();
@@ -185,24 +187,16 @@ export const CharacterPlayer: React.FC<CharacterPlayerProps> = ({
     ctx.globalAlpha = 1.0;
     ctx.drawImage(currentImg, offsetX, offsetY, drawW, drawH);
 
-    // Seamless loop cross-fade at 3-second midpoint (frame 75) and 6-second cycle completion (frame 150)
-    const crossFadeFrames = 5;
-    const midPoint = Math.floor(totalFrames / 2); // Frame 75 (3.0s mark at 25fps)
-    let blendImg: HTMLImageElement | null = null;
-    let blendAlpha = 0;
-
-    if (frameIdx >= midPoint - crossFadeFrames && frameIdx < midPoint) {
-      blendImg = imagesRef.current[0] || lastValidImageRef.current;
-      blendAlpha = ((frameIdx - (midPoint - crossFadeFrames) + 1) / (crossFadeFrames + 1)) * 0.35;
-    } else if (frameIdx >= totalFrames - crossFadeFrames) {
-      blendImg = imagesRef.current[0] || lastValidImageRef.current;
-      blendAlpha = (frameIdx - (totalFrames - crossFadeFrames) + 1) / (crossFadeFrames + 1);
-    }
-
-    if (blendImg && blendImg.complete && blendImg.naturalWidth > 0 && blendAlpha > 0) {
-      ctx.globalAlpha = blendAlpha;
-      ctx.drawImage(blendImg, offsetX, offsetY, drawW, drawH);
-      ctx.globalAlpha = 1.0;
+    // Seamless loop cross-fade on the final frames of the 7-second sequence (frames 144 to 150)
+    const crossFadeFrames = 6;
+    if (frameIdx >= totalFrames - crossFadeFrames) {
+      const firstImg = imagesRef.current[0] || lastValidImageRef.current;
+      if (firstImg && firstImg.complete && firstImg.naturalWidth > 0) {
+        const blendAlpha = (frameIdx - (totalFrames - crossFadeFrames) + 1) / (crossFadeFrames + 1);
+        ctx.globalAlpha = blendAlpha;
+        ctx.drawImage(firstImg, offsetX, offsetY, drawW, drawH);
+        ctx.globalAlpha = 1.0;
+      }
     }
   };
 
@@ -247,7 +241,8 @@ export const CharacterPlayer: React.FC<CharacterPlayerProps> = ({
     if (!isLoaded) return;
 
     const isLowTier = isLowTierDevice();
-    const fps = prefersReducedMotion.current ? 12 : isLowTier ? 15 : targetFps;
+    const computedFps = targetFps ?? (totalFrames / durationSeconds);
+    const fps = prefersReducedMotion.current ? 12 : isLowTier ? 15 : computedFps;
     const frameInterval = 1000 / fps;
 
     const tick = (timestamp: number) => {
