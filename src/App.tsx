@@ -18,6 +18,7 @@ const About = lazy(() => import('./components/About').then((m) => ({ default: m.
 const Projects = lazy(() => import('./components/Projects').then((m) => ({ default: m.Projects })));
 const Craft = lazy(() => import('./components/Craft').then((m) => ({ default: m.Craft })));
 const Skills = lazy(() => import('./components/Skills').then((m) => ({ default: m.Skills })));
+const Certifications = lazy(() => import('./components/Certifications').then((m) => ({ default: m.Certifications })));
 const Interests = lazy(() => import('./components/Interests').then((m) => ({ default: m.Interests })));
 const Contact = lazy(() => import('./components/Contact').then((m) => ({ default: m.Contact })));
 const Connect = lazy(() => import('./components/Connect').then((m) => ({ default: m.Connect })));
@@ -57,6 +58,7 @@ export default function App() {
                 <Projects />
                 <Craft />
                 <Skills />
+                <Certifications />
                 <Interests />
                 <Contact />
                 <Connect />
