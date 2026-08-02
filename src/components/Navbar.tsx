@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { label: 'Projects', href: '#projects' },
   { label: 'Craft', href: '#craft' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Certifications', href: '#certifications' },
   { label: 'Interests', href: '#interests' },
   { label: 'Connect', href: '#connect' },
 ];
