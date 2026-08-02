@@ -15,12 +15,12 @@ const FOOTER_NAV = [
 ];
 
 const MINI_SOCIALS = [
-  { label: 'GitHub', href: 'https://github.com', icon: Github },
-  { label: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { label: 'Email', href: 'mailto:boobesh35@gmail.com', icon: Mail },
-  { label: 'X / Twitter', href: 'https://x.com', icon: Twitter },
-  { label: 'WhatsApp', href: 'https://wa.me/919876543210', icon: MessageCircle },
-  { label: 'Telegram', href: 'https://t.me/boobesh_j', icon: Send },
+  { label: 'GitHub', href: 'https://github.com/boobesh3112', icon: Github },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/boobesh-j-a904b6380', icon: Linkedin },
+ { label: 'Email', href: 'mailto:boobesh35@gmail.com', icon: Mail },
+  { label: 'X / Twitter', href: 'https://x.com/boobeshj_07', icon: Twitter },
+  { label: 'WhatsApp', href: 'https://wa.me/919842362989', icon: MessageCircle },
+  { label: 'Telegram', href: 'https://t.me/gangster_gaming_yt', icon: Send },
 ];
 
 export const Footer: React.FC = () => {
