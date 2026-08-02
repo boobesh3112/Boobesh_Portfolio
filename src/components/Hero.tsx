@@ -117,7 +117,7 @@ export const Hero: React.FC = () => {
             <CharacterPlayer
               onLoaded={() => setIsCharacterReady(true)}
               totalFrames={150}
-              targetFps={24}
+              durationSeconds={7}
               maxWidth="640px"
               className="w-full h-auto transform scale-100 sm:scale-105 md:scale-110 lg:scale-115 drop-shadow-2xl"
             />
